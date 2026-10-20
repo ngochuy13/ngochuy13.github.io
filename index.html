@@ -3,154 +3,217 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jacob Pham — 15 years across software development, engineering leadership, and AI agents. Based in Vietnam.">
-  <meta name="theme-color" content="#f5f2ea" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#1a1916" media="(prefers-color-scheme: dark)">
-  <meta property="og:title" content="Jacob Pham">
-  <meta property="og:description" content="15 years across software development, engineering leadership, and AI agents.">
+  <title>Pham Ngoc Huy</title>
+  <meta name="description" content="Pham Ngoc Huy (Jacob) — Frontend Lead & AI Engineering Lead. 14+ years building high-traffic web products; creator of OpenClaw.">
+  <meta name="theme-color" content="#09090d">
+  <meta property="og:title" content="Pham Ngoc Huy — Frontend Lead · AI Engineering Lead">
+  <meta property="og:description" content="Leading the frontend behind autonomous.ai and building multi-agent systems with OpenClaw.">
   <meta property="og:image" content="https://ngochuy13.github.io/assets/avatar.jpg">
-  <title>Jacob Pham</title>
   <link rel="icon" type="image/jpeg" href="assets/avatar.jpg">
-  <link rel="stylesheet" href="style.css?v=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
+  <link rel="stylesheet" href="css/tokens.css?v=2">
+  <link rel="stylesheet" href="css/base.css?v=2">
+  <link rel="stylesheet" href="css/components.css?v=2">
+  <link rel="stylesheet" href="css/sections.css?v=2">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="js/main.js?v=2" defer></script>
 </head>
 <body>
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="page">
-    <header class="site-header">
-      <span class="monogram" aria-hidden="true">JP</span>
-      <nav aria-label="Main navigation">
-        <a href="#about">About</a>
+
+  <header class="nav-wrap">
+    <nav class="nav glass" aria-label="Main navigation">
+      <a class="nav-brand" href="#top"><img src="assets/avatar.jpg" alt="" width="28" height="28">Huy</a>
+      <div class="nav-links">
         <a href="#work">Work</a>
+        <a href="#lab">Lab</a>
+        <a href="#experience">Experience</a>
         <a href="#stack">Stack</a>
-        <a href="#exploring">Exploring</a>
-      </nav>
-    </header>
+      </div>
+      <a class="btn btn-primary btn-sm" href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <main id="main">
-      <section class="introduction reveal" id="about" aria-labelledby="name">
-        <div class="intro-text">
-          <p class="eyebrow">Engineer · Leader · Builder — Vietnam</p>
-          <h1 id="name">Jacob Pham<span class="name-period">.</span></h1>
-          <div class="bio">
-            <p>I've spent <strong class="highlight">15 years</strong> in the tech industry, working across
-              <strong class="highlight">software development</strong>, <strong class="highlight">engineering leadership</strong>,
-              and <strong class="highlight">innovation</strong>.</p>
-            <p>These days I build <strong class="highlight">AI agents</strong> — skills, memory, and onboarding flows that make assistants useful on real devices.</p>
-          </div>
-        </div>
-        <figure class="portrait">
-          <img src="assets/avatar.jpg" width="460" height="460" alt="Jacob Pham pouring tea at a carved wooden table.">
-        </figure>
-      </section>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-avatar reveal">
+        <img src="assets/avatar.jpg" width="460" height="460" alt="Pham Ngoc Huy pouring tea at a carved wooden table.">
+      </div>
+      <p class="badge glass reveal"><span class="pulse" aria-hidden="true"></span>Frontend Lead · AI Engineering Lead</p>
+      <h1 class="reveal">Pham Ngoc Huy<span class="aka">aka Jacob</span></h1>
+      <p class="hero-lede reveal">I lead the frontend behind <strong>autonomous.ai</strong> and build <em>multi-agent systems</em> — creator of <strong>OpenClaw</strong>, the framework powering Intern Cloud.</p>
+      <div class="hero-cta reveal">
+        <a class="btn btn-primary" href="mailto:phamngochuy.1989@gmail.com">Get in touch</a>
+        <a class="btn glass" href="https://www.linkedin.com/in/huy-pham-fullstack-js">LinkedIn ↗</a>
+        <a class="btn glass" href="https://github.com/ngochuy13">GitHub ↗</a>
+      </div>
+      <p class="hero-meta mono reveal">📍 Dĩ An, Ho Chi Minh City · Vietnamese &amp; English</p>
+    </section>
 
-      <p class="callout reveal"><strong>Currently</strong> building agent skills on OpenClaw — role detection, skill installs, and self-updating workflows. <a href="https://github.com/ngochuy13/intern-skills">See the spec ↗</a></p>
+    <section class="stats" aria-label="Highlights">
+      <div class="stat glass reveal"><b data-count="14" data-suffix="+">14+</b><span>years building for the web</span></div>
+      <div class="stat glass reveal"><b data-count="2" data-suffix="M+">2M+</b><span>monthly users on autonomous.ai</span></div>
+      <div class="stat glass reveal"><b data-count="50" data-suffix="k">50k</b><span>peak concurrent, Black Friday 2022</span></div>
+      <div class="stat glass reveal"><b data-count="20" data-prefix="$" data-suffix="M">$20M</b><span>GMV in a single day</span></div>
+      <div class="stat glass reveal"><b data-count="20">20</b><span>engineers led on the frontend team</span></div>
+    </section>
 
-      <nav class="social-links reveal" aria-label="Find me online">
-        <a href="https://github.com/ngochuy13">GitHub <span aria-hidden="true">↗</span></a>
-      </nav>
+    <section class="section" id="work" aria-labelledby="work-title">
+      <header class="section-head reveal">
+        <p class="kicker mono">01 — Flagship work</p>
+        <h2 id="work-title">Products I've <em>architected</em> and shipped</h2>
+      </header>
+      <div class="bento">
+        <article class="card glass spot span-2 reveal">
+          <p class="card-kicker mono">Creator · Lead Engineer</p>
+          <h3>OpenClaw</h3>
+          <p>Autonomous multi-agent framework — Skills, a SOUL system, plugins and <code>AGENTS.md</code> orchestration. 16+ role templates with tool connectors for task delegation, tool execution and shared context.</p>
+          <ul class="chips"><li>TypeScript</li><li>Node.js</li><li>Claude</li><li>MCP</li><li>ACP</li><li>LangChainJS</li></ul>
+          <a class="card-link" href="https://github.com/ngochuy13/intern-skills">Onboarding skill spec ↗</a>
+        </article>
+        <article class="card glass spot reveal">
+          <p class="card-kicker mono">Architect</p>
+          <h3>Intern Cloud</h3>
+          <p>Hire role-specific AI interns on subscription — 9 roles from Ops, HR and PM to Developer, Designer and Finance, each with a full skill pack.</p>
+          <ul class="chips"><li>OpenClaw</li><li>Next.js</li><li>MCP connectors</li></ul>
+        </article>
+        <article class="card glass spot reveal">
+          <p class="card-kicker mono">Frontend Lead · 2021 — now</p>
+          <h3>autonomous.ai</h3>
+          <p>E-commerce for standing desks, chairs and AI workspace gear. Scaled to 25× normal load on Black Friday with zero checkout-impacting frontend incidents.</p>
+          <ul class="chips"><li>Next.js</li><li>React</li><li>Vue</li><li>Redux</li></ul>
+          <a class="card-link" href="https://autonomous.ai">Visit ↗</a>
+        </article>
+        <article class="card glass spot span-2 reveal">
+          <p class="card-kicker mono">Frontend Lead · 2018 — 2021</p>
+          <h3>FITIN — 3D / AR commerce</h3>
+          <p>Built from zero to production: a ~1,000-SKU 3D furniture catalog, AR try-at-home on mobile, and a browser-based interior-design tool that checks out a whole room in one click. Team of 10.</p>
+          <ul class="chips"><li>React</li><li>Three.js</li><li>WebGL</li><li>WebXR</li><li>GLTF pipelines</li></ul>
+        </article>
+      </div>
+    </section>
 
-      <dl class="stats reveal">
-        <div><dt>Years in tech</dt><dd>15+</dd></div>
-        <div><dt>Public repos</dt><dd>169</dd></div>
-        <div><dt>On GitHub since</dt><dd>2013</dd></div>
-      </dl>
-
-      <section class="block reveal" id="work" aria-labelledby="work-title">
-        <header class="block-intro">
-          <h2 id="work-title">Selected work</h2>
-          <p class="note">More on <a href="https://github.com/ngochuy13?tab=repositories&amp;type=source">GitHub</a></p>
-        </header>
-        <nav class="topic-nav" aria-label="Work areas">
-          <a href="#agents">AI agents</a>
-          <a href="#backend">Backend</a>
-          <a href="#apps">Web &amp; mobile</a>
-        </nav>
-
-        <section class="group" id="agents" aria-labelledby="agents-title">
-          <h3 id="agents-title">AI Agents</h3>
-          <ul class="item-list">
-            <li class="item">
-              <h4><a href="https://github.com/ngochuy13/intern-skills">intern-skills</a><span class="tag">Active</span></h4>
-              <p class="desc">Self-contained OpenClaw skill for Autonomous Intern devices: first-run onboarding with role detection, role-based skill installation, and cron-driven auto-updates from a versioned manifest.</p>
-              <div class="meta"><span class="lang">Python</span><span>2026</span><a href="https://github.com/ngochuy13/intern-skills">Code ↗</a></div>
-            </li>
-            <li class="item">
-              <h4><a href="https://github.com/ngochuy13/intern-dev">intern-dev</a></h4>
-              <p class="desc">An agent workspace — identity, memory, tools, heartbeat, and skills config that shape how an intern assistant thinks and works.</p>
-              <div class="meta"><span class="lang">HTML · Shell</span><span>2026</span><a href="https://github.com/ngochuy13/intern-dev">Code ↗</a></div>
-            </li>
+    <section class="section" id="lab" aria-labelledby="lab-title">
+      <header class="section-head reveal">
+        <p class="kicker mono">02 — Lab</p>
+        <h2 id="lab-title">Things I build <em>after hours</em></h2>
+        <p class="section-sub">Mostly private repos — technical notes only, happy to walk through any of them.</p>
+      </header>
+      <div class="lab">
+        <article class="card glass spot lab-feature reveal">
+          <p class="card-kicker mono">Flutter · iOS · Android · macOS · Web</p>
+          <h3>Mê suite — 4 apps, one design system</h3>
+          <p>A workspace of four Flutter apps — web novels, comics, movies and podcasts — sharing a Liquid Glass design system and one run/build toolchain with all-app hot reload.</p>
+          <ul class="ticks">
+            <li>Plugin source architecture: each source declares <code>SourceCapabilities</code>, the UI hides what it can't do</li>
+            <li>Multi-device sync with no backend — data encrypted <b>AES-256-GCM</b> client-side before it touches Firestore</li>
+            <li>Per-field timestamps so hide / progress edits from two devices merge instead of overwrite</li>
+            <li>Stale-while-revalidate feed cache: first frame renders instantly, offline-first</li>
+            <li>Native HLS player via <code>media_kit</code> (libmpv), background audio with lock-screen controls, EPUB / CBZ export</li>
           </ul>
-        </section>
+        </article>
+        <article class="card glass spot reveal">
+          <p class="card-kicker mono">TypeScript · pnpm monorepo</p>
+          <h3>Telegram ↔ coding agents</h3>
+          <p>Bridges that drive the Claude Code and Codex CLIs from Telegram: per-topic persistent sessions, file ingest and artifact delivery, voice prompts, queued turns and gated sandbox profiles.</p>
+        </article>
+        <article class="card glass spot reveal">
+          <p class="card-kicker mono">Raspberry Pi 5 · Python</p>
+          <h3>Planner → executor agent stack</h3>
+          <p>OpenClaw as the planner front door, a sandboxed executor for real work, and a knowledge brain synced every 30 min — 111 skills, reachable over Telegram.</p>
+        </article>
+        <article class="card glass spot reveal">
+          <p class="card-kicker mono">Node.js · Fastify · Prisma</p>
+          <h3>Production Fastify API</h3>
+          <p>22 plugins, JWT with ownership checks, per-IP and per-email rate limits, OpenAPI from JSON Schema, WebSocket presence and relay — 32 tests covering auth, IDOR and WS.</p>
+        </article>
+        <article class="card glass spot reveal">
+          <p class="card-kicker mono">Next.js 16 · React 19</p>
+          <h3>E-commerce v2</h3>
+          <p>App Router storefront with auth-aware prefetch, TanStack Query, Tailwind 4, i18n and Google OAuth.</p>
+        </article>
+        <article class="card glass spot reveal">
+          <p class="card-kicker mono">Solidity · Base</p>
+          <h3>Stand-to-earn dApp</h3>
+          <p>Rewards tokens for standing time — Hardhat contracts, wagmi / viem, MQTT desk sensors and Socket.IO live sessions.</p>
+        </article>
+        <article class="card glass spot span-full reveal">
+          <p class="card-kicker mono">Agent tooling</p>
+          <h3>A portable brain for agents</h3>
+          <p>Mined 143 repos (~221k commits) and 1,100+ agent sessions into playbooks so any machine's Claude works like mine.</p>
+        </article>
+      </div>
+    </section>
 
-        <section class="group" id="backend" aria-labelledby="backend-title">
-          <h3 id="backend-title">Backend</h3>
-          <ul class="item-list">
-            <li class="item">
-              <h4><a href="https://github.com/ngochuy13/nestjs-template">nestjs-template</a></h4>
-              <p class="desc">NestJS 10 API starter: Fastify, Prisma, Swagger docs, Joi validation, Winston logging, Docker-ready.</p>
-              <div class="meta"><span class="lang">TypeScript</span><span>2024</span><a href="https://github.com/ngochuy13/nestjs-template">Code ↗</a></div>
-            </li>
-          </ul>
-        </section>
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <header class="section-head reveal">
+        <p class="kicker mono">03 — Experience</p>
+        <h2 id="exp-title">Fourteen years, <em>always leading the frontend</em></h2>
+      </header>
+      <ol class="timeline">
+        <li class="reveal">
+          <span class="when mono">2021 — now</span>
+          <div><h3>Autonomous <small>Frontend Lead / AI Engineering Lead</small></h3>
+          <p>Lead 20 engineers (hired 6) on autonomous.ai. Architected the Next.js + Vue ecosystem, shared component systems and engineering standards. Since 2023: OpenClaw, Intern Cloud, Claude Code adoption across the team, and multi-agent pipelines on MCP / ACP.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="when mono">2018 — 2021</span>
+          <div><h3>FITIN <small>Frontend Lead</small></h3>
+          <p>3D catalog, AR try-at-home and a 3D interior-design tool for furniture e-commerce. Led 10 engineers, owned the hiring bar.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="when mono">2017 — 2018</span>
+          <div><h3>Thousandhands <small>Frontend Lead</small></h3>
+          <p>At-home spa booking platform, from zero to launch.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="when mono">2016 — 2017</span>
+          <div><h3>NAU Digital Creative <small>Frontend Lead</small></h3>
+          <p>Web and UI/UX delivery for international brands.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="when mono">2011 — 2016</span>
+          <div><h3>Open Digital · BamBoo · ExE <small>Frontend → Senior</small></h3>
+          <p>Outsourced web products for clients such as NTUC Plus (SG), Toyota Hong Kong and Kempinski.</p></div>
+        </li>
+      </ol>
+    </section>
 
-        <section class="group" id="apps" aria-labelledby="apps-title">
-          <h3 id="apps-title">Web &amp; Mobile</h3>
-          <ul class="item-list">
-            <li class="item">
-              <h4><a href="https://github.com/ngochuy13/commerce">commerce</a></h4>
-              <p class="desc">High-performance Next.js storefront — SEO-ready, i18n, theming, and dark mode, deployed on Vercel.</p>
-              <div class="meta"><span class="lang">TypeScript</span><span>2021</span><a href="https://commerce-git-master-ngochuy13.vercel.app">Demo ↗</a><a href="https://github.com/ngochuy13/commerce">Code ↗</a></div>
-            </li>
-            <li class="item">
-              <h4><a href="https://github.com/ngochuy13/flutter-ecommerce">flutter-ecommerce</a></h4>
-              <p class="desc">Cross-platform shopping app UI for iOS and Android.</p>
-              <div class="meta"><span class="lang">Dart</span><span>2021</span><a href="https://github.com/ngochuy13/flutter-ecommerce">Code ↗</a></div>
-            </li>
-            <li class="item">
-              <h4><a href="https://github.com/ngochuy13/flutter-blog">flutter-blog</a></h4>
-              <p class="desc">Personal blogging app built with Flutter.</p>
-              <div class="meta"><span class="lang">Dart</span><span>2021</span><a href="https://github.com/ngochuy13/flutter-blog">Code ↗</a></div>
-            </li>
-          </ul>
-        </section>
-      </section>
+    <section class="section" id="stack" aria-labelledby="stack-title">
+      <header class="section-head reveal">
+        <p class="kicker mono">04 — Stack</p>
+        <h2 id="stack-title">Tools I <em>reach for</em></h2>
+      </header>
+      <div class="stack-grid">
+        <div class="card glass reveal"><h3>Frontend</h3><ul class="chips"><li>React</li><li>Next.js</li><li>Vue</li><li>Nuxt</li><li>TypeScript</li><li>Redux</li><li>Zustand</li><li>Tailwind</li><li>SCSS</li></ul></div>
+        <div class="card glass reveal"><h3>AI / LLM</h3><ul class="chips"><li>Claude</li><li>Claude Code</li><li>OpenAI</li><li>MCP</li><li>ACP</li><li>LangChainJS</li><li>OpenClaw</li></ul></div>
+        <div class="card glass reveal"><h3>3D / AR</h3><ul class="chips"><li>Three.js</li><li>WebGL</li><li>WebXR</li><li>GLTF</li></ul></div>
+        <div class="card glass reveal"><h3>Backend &amp; data</h3><ul class="chips"><li>Node.js</li><li>Fastify</li><li>Express</li><li>GraphQL</li><li>Prisma</li><li>MongoDB</li><li>MySQL</li><li>Redis</li></ul></div>
+        <div class="card glass reveal"><h3>Mobile</h3><ul class="chips"><li>Flutter</li><li>Dart</li><li>React Native</li></ul></div>
+        <div class="card glass reveal"><h3>Leadership</h3><ul class="chips"><li>Hiring</li><li>Architecture</li><li>Mentoring</li><li>Cross-team delivery</li></ul></div>
+      </div>
+    </section>
 
-      <section class="block reveal" id="stack" aria-labelledby="stack-title">
-        <h2 id="stack-title">Stack</h2>
-        <dl class="stack">
-          <div><dt>Languages</dt><dd>TypeScript, JavaScript, Python, Dart</dd></div>
-          <div><dt>Backend</dt><dd>Node.js, NestJS, Fastify, Prisma, WebSockets</dd></div>
-          <div><dt>Frontend</dt><dd>React, Next.js, Vue, Nuxt</dd></div>
-          <div><dt>Mobile</dt><dd>Flutter, React Native</dd></div>
-          <div><dt>AI</dt><dd>Agent skills, RAG, multi-agent workflows</dd></div>
-        </dl>
-      </section>
+    <section class="contact glass reveal" id="contact" aria-labelledby="contact-title">
+      <p class="kicker mono">05 — Contact</p>
+      <h2 id="contact-title">Let's build something <em>worth shipping</em>.</h2>
+      <div class="hero-cta">
+        <button class="btn btn-primary" type="button" data-copy="phamngochuy.1989@gmail.com">
+          <span data-copy-label>phamngochuy.1989@gmail.com</span>
+        </button>
+        <a class="btn glass" href="https://www.linkedin.com/in/huy-pham-fullstack-js">LinkedIn ↗</a>
+        <a class="btn glass" href="https://github.com/ngochuy13">GitHub ↗</a>
+      </div>
+      <p class="hero-meta mono">Click the email to copy · B.IT, Ho Chi Minh City Open University · CCNA · LPIC-1/2</p>
+    </section>
+  </main>
 
-      <section class="block reveal" id="exploring" aria-labelledby="exploring-title">
-        <h2 id="exploring-title">Exploring</h2>
-        <p class="lede">Open-source projects I've been forking and reading lately.</p>
-        <ul class="chips">
-          <li><a href="https://github.com/ngochuy13/openclaw">openclaw</a></li>
-          <li><a href="https://github.com/ngochuy13/dify">dify</a></li>
-          <li><a href="https://github.com/ngochuy13/agno">agno</a></li>
-          <li><a href="https://github.com/ngochuy13/RAG-Anything">RAG-Anything</a></li>
-          <li><a href="https://github.com/ngochuy13/thunderbolt">thunderbolt</a></li>
-          <li><a href="https://github.com/ngochuy13/8xGPUs">8xGPUs</a></li>
-          <li><a href="https://github.com/ngochuy13/pm-skills">pm-skills</a></li>
-        </ul>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <span>© 2026 Jacob Pham</span>
-      <span>Plain HTML &amp; CSS · GitHub Pages</span>
-    </footer>
-  </div>
-
-  <figure class="tea-float" aria-hidden="true">
-    <span class="steam"><i></i><i></i><i></i></span>
-    <span class="cup">🍵</span>
-    <figcaption>Tea's ready.<br>Welcome in.</figcaption>
-  </figure>
+  <footer class="footer mono">
+    <span>© <span data-year>2026</span> Pham Ngoc Huy</span>
+    <span>Hand-written HTML · CSS · a pinch of JS</span>
+  </footer>
 </body>
 </html>

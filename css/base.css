@@ -1,0 +1,84 @@
+/* Reset, page chrome, background, nav, footer */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 16px/1.6 var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: rgb(246 180 107 / .35); }
+a { color: inherit; }
+img { display: block; max-width: 100%; }
+h1, h2, h3 { margin: 0; font-weight: 500; letter-spacing: -.03em; }
+em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spacing: 0; }
+code { font: .86em var(--mono); padding: .1em .4em; border-radius: 6px; background: rgb(255 255 255 / .07); }
+.mono { font-family: var(--mono); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 8px; }
+
+.skip-link { position: fixed; top: 12px; left: 12px; z-index: 50; transform: translateY(-200%); padding: 10px 14px; border-radius: 10px; background: var(--ink); color: var(--bg); }
+.skip-link:focus { transform: none; }
+
+/* Aurora background: three drifting blurred orbs + grain */
+.aurora { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.aurora::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at top, transparent 0%, var(--bg) 75%);
+}
+.aurora i { position: absolute; width: 46vmax; aspect-ratio: 1; border-radius: 50%; filter: blur(90px); opacity: .42; }
+.aurora i:nth-child(1) { background: var(--coral); top: -18vmax; left: -10vmax; animation: drift 22s var(--ease) infinite alternate; }
+.aurora i:nth-child(2) { background: var(--violet); top: -10vmax; right: -16vmax; animation: drift 26s var(--ease) infinite alternate-reverse; }
+.aurora i:nth-child(3) { background: var(--amber); top: 40vh; left: 30vw; width: 30vmax; opacity: .18; animation: drift 30s var(--ease) infinite alternate; }
+@keyframes drift { to { transform: translate3d(8vmax, 6vmax, 0) scale(1.15); } }
+
+/* Floating glass nav */
+.nav-wrap { position: sticky; top: 14px; z-index: 20; padding: 0 var(--gutter); }
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 760px;
+  margin: 14px auto 0;
+  padding: 7px 7px 7px 10px;
+  border-radius: 999px;
+}
+.nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 600; text-decoration: none; }
+.nav-brand img { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; }
+.nav-links { display: flex; gap: 4px; }
+.nav-links a {
+  padding: 7px 14px;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 14px;
+  text-decoration: none;
+  transition: color .2s, background .2s;
+}
+.nav-links a:hover { color: var(--ink); background: var(--glass-bg-hover); }
+
+main { max-width: var(--page); margin: 0 auto; padding: 0 var(--gutter); }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: var(--page);
+  margin: 0 auto;
+  padding: 32px var(--gutter) 40px;
+  color: var(--faint);
+  font-size: 12px;
+}
+
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .footer { flex-direction: column; gap: 6px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
